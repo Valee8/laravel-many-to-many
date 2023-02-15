@@ -6,6 +6,8 @@
         Products
     </h1>
 
+    <a href="{{ route('home') }}">Back</a>
+
     <ul>
         @foreach ($products as $product)
         <li>
@@ -13,6 +15,8 @@
             - {{ $product -> typology -> name }}
             - DIGITAL: 
             {{ $product -> typology -> digital ? "Yes" : "No" }}
+            - <a href="{{ route('product.delete', $product) }}">Delete</a>
+            - <a href="{{ route('product.edit', $product) }}">Edit</a>
         </li>
         @endforeach
     </ul>
