@@ -7,6 +7,10 @@
     </h1>
 
     <h2>
+        <a href="{{ route('product.home') }}">List products</a>
+    </h2>
+
+    <h2>
         <a href="{{ route('product.create') }}">Create new product</a>
     </h2>
 
